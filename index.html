@@ -9,28 +9,56 @@
     <title>Fauzul</title>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://fauzulIchwan.github.io"></a>
+            <a class="navbar-brand" href="http://fauzulIchwan.github.io">Fauzul</a>
           </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav">
-              <li><a href="#">Profil</a></li>
-              <li><a href="#">Tugas</a></li>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="http://fauzulIchwan.github.io/profil">Profil</a></li>
+              <li><a href="http://fauzulIchwan.github.io/Tugas">Tugas</a></li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <div class="container"> 
+          <div class="col-xs-12 col-sm-9">
+            <div class="jumbotron">
+              <h1>Welcome Visitor</h1>
+              <p></p>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-lg-4">
+                <h2>Tugas 1 TBO</h2>
+                <p>Teori Bahasa dan Otomata. Berisi Pengertian, Fungsi, dan Penerapan dari Teori Bahasa dan Otomata. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <h2>Tugas Lain</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              </div>
+            </div><!--/row-->
+          </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/row-->
+  
+        <hr>
+  
+        <footer>
+          <p>Fauzul Ichwan</p>
+        </footer>
+  
+      </div>
       
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>
