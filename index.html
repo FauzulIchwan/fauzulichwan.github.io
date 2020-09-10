@@ -4,61 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Fauzul</title>
 </head>
-<body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://fauzulIchwan.github.io">Fauzul</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="http://fauzulIchwan.github.io/profil">Profil</a></li>
-              <li><a href="http://fauzulIchwan.github.io/Tugas">Tugas</a></li>
-            </ul>
-          </div>
+
+<body style="font-family: Montserrat; background-color:  black;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-hijau">
+        <a class="navbar-brand" href="https://github.com/fauzulIchwan">MFI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tugas.html">Tugas</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
       <div class="container-fluid"> 
-          <div class=""></div>
-            <div class="jumbotron">
-              <h1>Welcome Visitor</h1>
-              <p></p>
+            <div class="jumbotron mt-3" style="background-color:#1b262c;border-radius: 0%;">
+              <h1 class="text-light text-center">Selamat Datang</h1>
+              <marquee behavior="Scroll" direction="left" scrolldelay="50" class="text-hijau">Stay at Home, Stay Healthy. Jaga dirimu dan orang di sekitarmu. </marquee>
             </div>
-            <div class="row">
-              <div class="col-xs-12 col-lg-4">
-                <h2>Tugas 1 TBO</h2>
-                <p>Teori Bahasa dan Otomata. Berisi Pengertian, Fungsi, dan Penerapan dari Teori Bahasa dan Otomata. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-              </div>
-              <div class="col-xs-12 col-lg-4">
-                <h2>Tugas Lain</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-              </div>
-            </div><!--/row-->
-          </div><!--/.col-xs-12.col-sm-9-->
-        </div><!--/row-->
+            <div class="card-columns">
+                <div class="card bg-hitam text-light">
+                  <img src="img/tbo.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-hijau">Tugas 1 TBO</h5>
+                    <p class="card-text roboto">Pengertian, Tujuan, dan Pengaplikasian Teori Bahasa dan Otomata</p>
+                    <div class="text-right"> <a href="TBO1.html" class="btn btn-light">Baca Detail</a></div>
+                  </div>
+                </div>
+                <div class="card bg-hitam text-light">
+                    <img src="img/AI.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-hijau">Tugas lain</h5>
+                      <p class="card-text roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque facere dolores non distinctio illo nihil suscipit pariatur dolore repellat obcaecati reprehenderit esse eius saepe officiis accusantium, odit officia debitis.</p>
+                      <div class="text-right"> <a href="TBO1.html" class="btn btn-light">Baca Detail</a></div>
+                    </div>
+                  </div>
+                  <div class="card bg-hitam text-light">
+                    <div class="card-body">
+                      <h5 class="card-title text-hijau">Tugas lain</h5>
+                      <p class="card-text roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugiat error dolores soluta animi,</p>
+                      <div class="text-right"> <a href="TBO1.html" class="btn btn-light">Baca Detail</a></div>
+                    </div>
+                  </div>
+                  <div class="card bg-hitam text-light">
+                    <div class="card-body">
+                      <h5 class="card-title text-hijau">Tugas lain</h5>
+                      <p class="card-text roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque facere dolores non distinctio illo nihil suscipit pariatur dolore repellat obcaecati reprehenderit esse eius saepe officiis accusantium, odit officia debitis.</p>
+                      <div class="text-right"> <a href="TBO1.html" class="btn btn-light">Baca Detail</a></div>
+                    </div>
+                  </div>
+                  <div class="card bg-hitam text-light">
+                    <img src="img/AI.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-hijau">Tugas lain</h5>
+                      <p class="card-text roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugiat error dolores soluta animi,</p>
+                      <div class="text-right"> <a href="TBO1.html" class="btn btn-light">Baca Detail</a></div>
+                    </div>
+                  </div>
+            </div>
+      </div>
   
         <hr>
-  
-        <footer>
-          <p>Fauzul Ichwan</p>
-        </footer>
-  
-      </div>
+    <div class="bg-hijau text-dark p-2">
+          <h5>Muh. Fauzul Ichwan</h5>
+          <h6>D121181018</h6>
+    </div>
+</div>
       
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
