@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mesin Turing</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-hijau">
+        <a class="navbar-brand" href="https://github.com/fauzulIchwan">MFI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tugas.html">Tugas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid mt-2">
+        <div class="text-center">
+            <h2 class="text-hijau">Mesin Turing</h2>
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 com-md-6 mb-3">
+                  <div class="card h-100 bg-hitam">
+                    <div class="card-body text-light">
+                      <h5 class="card-title text-hijau">Definisi</h5>
+                      <p class="roboto card-text text-justify"><span class="tab-2"></span><b>Mesin Turing</b> adalah model komputasi teoretis yang ditemukan oleh Alan Turing, berfungsi sebagai model ideal untuk melakukan perhitungan matematis. <br>
+                        <br><span class="tab-2"></span>Mesin turing dapat diadaptasi untuk mensimulasi logika dari setiap algoritma oleh karena itu cara kerja mesin turing adalah ekivalen dengan cara kerja komputer sekarang ini dan mesin turing juga ekivalen dengan problema komputasi matematika. Mesin turing tidak ditujukan sebagai teknologi komputasi praktis tetapi lebih sebagai eksperimen pemikiran yang mewakili sebuah mesin komputasi. Mesin turing membantu para ilmuan komputer memahami batas-batas komputasi mekanis.
+
+                        Sebagai input dari mesin turing adalah kata atau untai atas suatu alfabet T. Mesin turing berhenti dengan keadaan menerima atau menolak untai. Kadang-kadang terjadi pula perulangan atau looping tak terhingga.
+                        <br>
+                        <br>Mesin turing didefinisikan sebagai 7 tuple M = (Q, Σ, Γ, δ, q0, B, F)
+                        <br> Q: himpunan hingga state,
+                        <br> Σ: alfabet input,
+                        <br> Γ: simbol pada pita (meliputi pula blank)
+                        <br> q0: state awal, Σ Î Q
+                        <br> B: simbol kosong (blank) (bukan bagian dari Σ )
+                        <br> δ: fungsi transisi
+                        <br> F: state akhir, F Î Q
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 com-md-6 mb-3">
+                  <div class="card h-100 bg-hitam">
+                    <div class="card-body text-light text-left roboto">
+                      <h5 class="card-title text-hijau text-center montserrat">Spesifikasi & Cara Kerja Mesin Turing</h5>
+                      <p class="card-text"> 
+                        <span class="text-hijau">Spesifikasi Mesin Turing</span>
+                            <ol><li>Mesin turing memiliki pita berupa array sebagai memori yang dapat menyimpan sebuah simbol tunggal</li>
+                            <li>Mesin turing memiliki head sebagai penunjuk posisi yang sedang diakses pada pita</li>
+                            <li>Head dapat bergerak kekanan/kekiri pada pita sesuai fungsi transisi yang ditetapkan untuk membaca inputan</li>
+                            <li>Head juga dapat melakukan penulisan/ mengubah isi pita</li>
+                            </ol>
+                        
+                        <br><span class="text-hijau">Prinsip Kerja Mesin Turing</span>
+                        <ol>
+                        <li>Lihat state semula dan simbol yang ditunjuk head</li>
+                        <li>Berdasarkan fungsi transisinya, tentukan:</li>
+                            <ul>
+                            <li>State berikutnya</li>
+                            <li>Lakukan penulisan ke pita</li>
+                            <li>Gerakkan head ke kanan dan ke kiri</li>
+                            </ul>
+                        <li>Bila dari pasangan state dan simbol yang ditunjuk head tidak ada lagi fungsi transisinya,berarti mesin turing berhenti</li>
+                        <li>Bila mesin turing berhenti di dalam state final (F) , berarti input diterima. Sebaliknya jika mesin berhenti tidak pada state akhir,maka berarti inputan tersebut ditolak.</li>
+                        </ol></p>
+                    </div>
+                  </div>
+                </div><!--col-sm-12 col-lg-6 com-md-6 mb-3-->
+              </div><!--row-->
+                <h2 class="text-hijau">Contoh Mesin Turing</h2>
+                <div class="row">
+                  <div class="col-sm-12 col-lg-12 com-md-12 mb-3">
+                    <div class="card h-100 bg-hitam">
+                      <div class="card-body text-light text-left roboto">
+                        <h5 class="card-title text-hijau text-center montserrat">Mesin Turing Sederhana</h5>
+                        <p class="roboto card-text"><span class="tab-2"></span>Sebuah contoh mesin Turing dapat dibangun untuk melakukan komputasi sederhana yang didefinsikan seperti ini:
+                            <br>
+                            <br>Tentukan ada berapa angka 1 dalam sebuah string berbentuk 0111...110 (rangkaian angka 1 yang didahului dengan 0 dan diakhiri juga dengan 0), apakah berjumlah genap atau berjumlah ganjil.
+                            <br>
+                            <br>Jika angka 1 di antara dua angka 0 berjumlah genap, tulis sebuah angka 0 pada salah satu sel dari tape mesin Turing.
+                            <br>
+                            <br>Jika angka 1 di antara dua angka 0 berjumlah ganjil, tulis sebuah angka 1 pada salah satu sel dari tape mesin Turing.
+                            <br>
+                            <br>Untuk menyelesaikan masalah komputasi ini, kita buat tiga buah State bagi mesin Turing ini, yaitu Start, Even, dan Odd. Di samping itu kita buat sekumpulan aturan Transisi yang digunakan oleh mesin Turing ini untuk melakukan proses komputasinya. 
+                            <br>Aturan-aturan Transisi tersebut dapat dituliskan demikian:
+                            <ol>
+                                <li>Jika mesin Turing berada pada status Start, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi status Even, Ganti simbol 0 pada Tape dengan Blank (atau Hapus simbol 0 pada Tape), dan Bergerak ke kanan satu sel.</li>
+                                <li>Jika mesin Turing berada pada status Even, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi status Odd, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.</li>
+                                <li>Jika mesin Turing berada pada status Odd, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi Even, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.</li>
+                                <li>Jika mesin Turing berada pada status Even, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 0, dan tetap pada sel tersebut (tidak perlu berpindah ke kiri maupun ke kanan).</li>
+                                <li>Jika mesin Turing berada pada status Odd, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 1, dan tetap pada sel tersebut.</li>
+                            </ol></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--row-->
+        </div>
+    </div>
+
+    <div class="bg-hijau text-dark p-2">
+        <h5>Muh. Fauzul Ichwan</h5>
+        <h6>D121181018</h6>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
